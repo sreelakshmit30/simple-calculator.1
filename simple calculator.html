@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+<style>
+body{
+font-family: Arial;
+text-align: center;
+margin-top: 100px;
+}
+
+input{
+width: 200px;
+height: 30px;
+font-size: 18px;
+}
+
+button{
+width: 50px;
+height: 40px;
+font-size: 18px;
+margin: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Simple Calculator</h2>
+
+<input type="text" id="result"><br><br>
+
+<button onclick="add()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+
+<script>
+function add(){
+let a = Number(prompt("Enter first number"));
+let b = Number(prompt("Enter second number"));
+document.getElementById("result").value = a + b;
+}
+
+function sub(){
+let a = Number(prompt("Enter first number"));
+let b = Number(prompt("Enter second number"));
+document.getElementById("result").value = a - b;
+}
+
+function mul(){
+let a = Number(prompt("Enter first number"));
+let b = Number(prompt("Enter second number"));
+document.getElementById("result").value = a * b;
+}
+
+function div(){
+let a = Number(prompt("Enter first number"));
+let b = Number(prompt("Enter second number"));
+document.getElementById("result").value = a / b;
+}
+</script>
+
+</body>
+</html>
